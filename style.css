@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+#introduction {
+  top: 200px;
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  top: 200px;
+  position: absolute;
+  opacity: 0;
+  font-size: 30px;
+  font-weight: 600;
+  transition: opacity 2s;
+}
+
+#top-scores {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+#top-scores > h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#top-scores > ol {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#worst-scores {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+#worst-scores > h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#worst-scores > ol {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+  font-weight: 500;
+}
